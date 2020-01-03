@@ -1,0 +1,14 @@
+@import "reset.css";
+
+html, body {
+    font-family: "Helvetica Neue", Helvetica, "Open Sans", Arial, sans-serif;
+    margin: 2em auto;
+    max-width: 35em;
+    color: #f82148;
+}
+
+h1 {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    letter-spacing: 0.08em;
+}
