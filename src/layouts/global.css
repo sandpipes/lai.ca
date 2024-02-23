@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+:root {
+    --color: white;
+
+    --primary-accent: #00AAFF;
+    --secondary-accent: #69CCFF;
+    --tertiary-accent: #CACACA;
+
+    --primary-bg: #161619;
+    --secondary-bg: #080c10;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --color: black;
+
+        --primary-accent: #e0000d;
+        --secondary-accent: #ff8484;
+        --tertiary-accent: #5a5a5a;
+
+        --primary-bg: white;
+        --secondary-bg: #080c10;
+    }
+  }
+
+html {
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background: var(--primary-bg);
+    color: var(--color);
+}
+
+code {
+    font-family:
+        Menlo,
+        Monaco,
+        Lucida Console,
+        Liberation Mono,
+        DejaVu Sans Mono,
+        Bitstream Vera Sans Mono,
+        Courier New,
+        monospace;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.1s ease-in-out 0s;
+    color: var(--primary-accent);
+}
+
+a:hover {
+    color: var(--secondary-accent);
+}
