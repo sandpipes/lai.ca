@@ -1,3 +1,3 @@
-# lai.sh
+# lai.ca
 
 A very basic website.
